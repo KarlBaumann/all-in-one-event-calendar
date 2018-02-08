@@ -188,7 +188,7 @@ class Ai1ec_Exception_Handler {
      *
      * @return void Exception handler is not expected to return
      */
-    public function handle_exception( Exception $exception ) {
+    public function handle_exception( Throwable $exception ) {
         if ( defined( 'AI1EC_DEBUG' ) && true === AI1EC_DEBUG ) {
             echo '<pre>';
             $this->var_debug( $exception );
